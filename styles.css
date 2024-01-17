@@ -1,0 +1,58 @@
+body {
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+   /*background-color:azure;*/
+    background-image:url(images/backgroundFinal.png);
+    color:whitesmoke;
+}
+/* Structure */
+#content {
+background:#3a4b4f;   /* moves text over */
+padding: auto;/*area inside the box margin = outside the element*/
+width: 80%;
+margin: auto;   /*center horizontally*/
+border-radius: 100 px;/*takes off the sharp edges*/
+}
+/*Typography*/
+
+/*navigation*/
+#main-nav a{
+    /*remove the underline*/
+    text-decoration: none;
+    background:#3a4b4f;
+    padding: 2px;
+    margin:auto;
+    color:whitesmoke;
+
+    border-radius: 2px;
+
+   
+}
+#ass-nav a{
+    /*text-decoration: none;
+    background: b0eff7;
+    padding: 2px;
+    margin:auto;
+    color:#033254;
+    */
+    color:whitesmoke;
+    text-decoration: none;
+    background:#3a4b4f;   /* moves text over */
+    padding: auto;/*area inside the box margin = outside the element*/
+    width: 80%;
+    margin: auto;   /*center horizontally*/
+    border-radius: 100 px;/*takes off the sharp edges*/
+}
+ul {
+    color: whitesmoke;
+}
+h2{
+    text-decoration: none;
+    padding: auto;/*area inside the box margin = outside the element*/
+    width: 80%;
+    margin: 20px;   /*center horizontally*/
+    border-radius: 100 px;/*takes off the sharp edges*/
+}
+h1 {
+    color:whitesmoke;
+}
