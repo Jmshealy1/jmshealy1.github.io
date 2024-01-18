@@ -1,28 +1,63 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:blanchedalmond;
+    margin:auto;
+    font-family:serif;
+   /*background-color:azure;*/
+    background:url(images/background.jpg) no-repeat center fixed;
+    background-size: 1000px 800px;
+    background-repeat: no-repeat;
+    background-color:#000080;
+    color:white;
 }
 /* Structure */
 #content {
-background:darkgreen;   /* moves text over */
+background:black;   /* moves text over */
 padding: 5px;/*area inside the box margin = outside the element*/
 width: 80%;
 margin: auto;   /*center horizontally*/
 border-radius: 5 px;/*takes off the sharp edges*/
+background-color: #ff0000;
 
 }
 /*Typography*/
-
+table{
+    color:whitesmoke;
+    text-decoration: #ff0000;
+    background:#3a4b4f;   /* moves text over */
+    padding: auto;/*area inside the box margin = outside the element*/
+    width: 80%;
+    margin: auto;   /*center horizontally*/
+    border-radius: 100 px;/*takes off the sharp edges*/
+   
+    
+}
+ ul a{
+    color:white;
+}
 /*navigation*/
 #main-nav a{
-    /*remove the underline*/
-    text-decoration: none;
-    background: #d9961a;
-    padding: 5px;
-    border-radius: 2px;
+    color:whitesmoke;
+    text-decoration: #ff0000;
+    background:#3a4b4f;   /* moves text over */
+    padding: auto;/*area inside the box margin = outside the element*/
+    width: 80%;
+    margin: auto;   /*center horizontally*/
+    border-radius: 100 px;/*takes off the sharp edges*/
    
 }
-
+h2{
+    text-decoration: none;
+    padding: auto;/*area inside the box margin = outside the element*/
+    width: 80%;
+    margin: 20px;   /*center horizontally*/
+    border-radius: 100 px;/*takes off the sharp edges*/
+    background-color:#ff0000;
+}
 h1 {
-    color:blue;
+    color:white;
+    text-decoration: none;
+    padding: auto;/*area inside the box margin = outside the element*/
+    width: 80%;
+    margin: auto;   /*center horizontally*/
+   background-color: #ff0000;
+    border-radius: 100 px;/*takes off the sharp edges*/
 }
