@@ -7,34 +7,41 @@ body {
     background-repeat: no-repeat;
     background-color:#000080;
     color:white;
+    text-align: center;
 }
 /* Structure */
-#content {
-background:black;   /* moves text over */
-padding: 5px;/*area inside the box margin = outside the element*/
-width: 80%;
-margin: auto;   /*center horizontally*/
-border-radius: 5 px;/*takes off the sharp edges*/
-background-color: #ff0000;
+p{
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    padding: auto;/*area inside the box margin = outside the element*/
+    width: 50%;
+    margin: auto;   /*center horizontally*/
+   background-color: rgba(51, 170, 51, .1);
+    border-radius: 100 px;/*takes off the sharp edges*/
+    opacity:0.9;
+    
 
 }
 /*Typography*/
 table{
+    text-align: center;
     color:whitesmoke;
-    text-decoration: #ff0000;
-    background:#3a4b4f;   /* moves text over */
+    text-decoration: none;
+    background:#3a4b4f;
+    opacity:0.9;  /* moves text over */
     padding: auto;/*area inside the box margin = outside the element*/
-    width: 80%;
+    width: 100%;
     margin: auto;   /*center horizontally*/
     border-radius: 100 px;/*takes off the sharp edges*/
-   
-    
+
 }
  ul a{
     color:white;
 }
 /*navigation*/
 #main-nav a{
+    text-align: center;
     color:whitesmoke;
     text-decoration: #ff0000;
     background:#3a4b4f;   /* moves text over */
@@ -42,17 +49,10 @@ table{
     width: 80%;
     margin: auto;   /*center horizontally*/
     border-radius: 100 px;/*takes off the sharp edges*/
-   
+
 }
-h2{
-    text-decoration: none;
-    padding: auto;/*area inside the box margin = outside the element*/
-    width: 80%;
-    margin: 20px;   /*center horizontally*/
-    border-radius: 100 px;/*takes off the sharp edges*/
-    background-color:#ff0000;
-}
-h1 {
+h3 {
+    text-align: center;
     color:white;
     text-decoration: none;
     padding: auto;/*area inside the box margin = outside the element*/
@@ -60,4 +60,27 @@ h1 {
     margin: auto;   /*center horizontally*/
    background-color: #ff0000;
     border-radius: 100 px;/*takes off the sharp edges*/
+    opacity: 0.9;
+
+}
+h2{
+    text-align: center;
+    text-decoration: none;
+    padding: auto;/*area inside the box margin = outside the element*/
+    width: 80%;
+    margin: auto;   /*center horizontally*/
+    border-radius: 100 px;/*takes off the sharp edges*/
+    background-color:#ff0000;
+    opacity: 0.9;
+}
+h1 {
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    padding: auto;/*area inside the box margin = outside the element*/
+    width: 80%;
+    margin: auto;   /*center horizontally*/
+   background-color: #ff0000;
+    border-radius: 100 px;/*takes off the sharp edges*/
+    opacity: 0.9;
 }
