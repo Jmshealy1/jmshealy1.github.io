@@ -28,6 +28,9 @@ border-radius: 100 px;/*takes off the sharp edges*/
 
    
 }
+a:hover{
+    text-transform: uppercase;
+}
 #ass-nav a{
     /*text-decoration: none;
     background: b0eff7;

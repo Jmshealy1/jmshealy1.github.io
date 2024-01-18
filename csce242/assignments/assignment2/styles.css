@@ -40,6 +40,9 @@ table{
     border-radius: 100 px;/*takes off the sharp edges*/
 
 }
+a:hover{
+   text-transform: uppercase;
+}
  ul a{
     color:white;
 }
