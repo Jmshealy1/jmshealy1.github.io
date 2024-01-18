@@ -8,6 +8,7 @@ body {
     background-color:#000080;
     color:white;
     text-align: center;
+    opacity: 0.9;
 }
 /* Structure */
 p{
@@ -22,6 +23,9 @@ p{
     opacity:0.9;
     
 
+}
+trophy a{
+    margin:auto;
 }
 /*Typography*/
 table{

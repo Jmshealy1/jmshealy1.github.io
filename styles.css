@@ -2,7 +2,7 @@ body {
     margin:auto;
     font-family: Arial, Helvetica, sans-serif;
    /*background-color:azure;*/
-    background-image:url(images/backgroundFinal.png);
+    background:url(images/backgroundFinal.png) no-repeat center fixed;
     color:whitesmoke;
 }
 /* Structure */
