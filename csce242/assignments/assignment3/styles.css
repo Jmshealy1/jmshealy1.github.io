@@ -7,7 +7,7 @@
 }
 .col1{
     background-color: cadetblue;
-    margin:20%;
+   
     padding:2px;
     text-align: center;
 }
@@ -18,11 +18,13 @@
 .col1{
     background-color: cadetblue;
     margin:auto;
+    width: auto;
+    height:auto;
     padding:2px;
     text-align: center;
 }
 .col2{
-    width:98%;
+    width:auto%;
     background-color: cadetblue;
     margin:2px;
 }
@@ -133,14 +135,17 @@ p{
     body {
         background-color: darkgrey;
     }
-    #main-nav ul, .flex-container {
+    #main-nav ul, .flex-container{
         display: flex;
     }
     #col1 li{
         display: inline-block;
     }
-    .bottom-row{
+    .bottom-row, .col1{
         flex:1;
+    }
+    .col2{
+        flex:2;
     }
 
     
