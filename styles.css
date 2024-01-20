@@ -33,6 +33,7 @@ text-align: center;
 } 
 h2 a:hover{
     text-transform: uppercase;
+    width: 10%;
 }
 h2 a{
     text-decoration: none;
@@ -40,6 +41,9 @@ h2 a{
     margin:2px;
     padding:10px;
     -webkit-text-fill-color: antiquewhite;
+}
+img:hover{
+    width:70%;
 }
 h1 {
     color:whitesmoke;
