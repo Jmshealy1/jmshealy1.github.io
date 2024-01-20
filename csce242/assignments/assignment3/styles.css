@@ -1,0 +1,139 @@
+/* STRUCTURE*/
+#main-header{
+    background-color:cadetblue;
+    text-align: center;
+    color:antiquewhite;
+    
+}
+#main-content{
+    background-color: rgb(134, 126, 126);
+    text-align: center;
+}
+.col1{
+    background-color: cadetblue;
+    margin:auto;
+    padding:2px;
+}
+.col2{
+    width:98%;
+    background-color: cadetblue;
+    margin:2px;
+}
+.col3{
+    margin:auto;
+}
+
+/*NAVIGATION*/    
+#main-content ul{
+    padding: 2px;
+    text-align: center;
+}
+.column{
+    background-color: darkgray(100, 35, 157);
+    padding: 5px;
+    margin: 5px;
+
+}
+#main-content li{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 2px;
+    margin:0;
+    text-align: left;
+}
+#main-nav ul{
+    padding-left: 2px;
+    -webkit-text-fill-color: rgb(38, 101, 99);
+}
+#main-nav li{
+    
+    list-style-type: none;
+    padding: 5px;
+    background-color: rgb(27, 61, 111);
+    border-bottom: 2px solid cadetblue;
+    margin:auto;
+    text-align: center;
+    
+}
+#main-leftnav li{
+    
+    list-style-type: none;
+    text-decoration: none;
+    background-color: rgb(27, 61, 111);
+    border-bottom: 2px solid cadetblue;
+}
+
+/*typography*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color:antiquewhite;
+}
+h2{
+    color: cadetblue;
+}
+h3{
+    color:antiquewhite;
+}
+h4{
+    color:antiquewhite;
+}
+p{
+    color:antiquewhite;
+}
+#main-nav a{
+    text-decoration: none;
+    -webkit-text-fill-color: antiquewhite;
+}
+#main-leftnav a{
+    color:antiquewhite;
+    text-decoration: none;
+}
+#main-navli1:hover{
+    text-transform: uppercase;
+}
+#main-navli2:hover{
+    text-transform: uppercase;
+}
+#main-navli3:hover{
+    text-transform: uppercase;
+}
+#main-navli4:hover{
+    text-transform: uppercase;
+}
+#main-navli5:hover{
+    text-transform: uppercase;
+}
+#main-li1:hover{
+    text-transform: uppercase;
+}
+#main-li2:hover{
+    text-transform: uppercase;
+}
+#main-li3:hover{
+    text-transform: uppercase;
+}
+#main-li4:hover{
+    text-transform: uppercase;
+}
+#main-li5:hover{
+    text-transform: uppercase;
+}
+/*Larger resolution*/
+@media (min-width: 900px){
+    body {
+        background-color: darkgrey;
+    }
+    #main-nav ul, .flex-container {
+        display: flex;
+    }
+    #col1 li{
+        display: inline-block;
+    }
+    .bottom-row{
+        flex:1;
+    }
+
+    
+}
