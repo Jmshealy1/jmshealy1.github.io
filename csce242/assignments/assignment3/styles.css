@@ -15,6 +15,9 @@
     background-color: rgb(134, 126, 126);
     text-align:left;
 }
+#main-footer{
+    text-align: center;
+}
 .col1{
     background-color: cadetblue;
     margin:auto;
@@ -146,6 +149,10 @@ p{
 @media (min-width: 900px){
     body {
         background-color: darkgrey;
+        text-align: center;
+    }
+    #main-footer{
+        text-align: center;
     }
     #main-nav ul, .flex-container{
         display: flex;
