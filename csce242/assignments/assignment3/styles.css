@@ -13,7 +13,7 @@
 }
 #main-content{
     background-color: rgb(134, 126, 126);
-    text-align: center;
+    text-align:left;
 }
 .col1{
     background-color: cadetblue;
@@ -21,12 +21,24 @@
     width: auto;
     height:auto;
     padding:2px;
-    text-align: center;
+    text-align: left;
 }
 .col2{
-    width:auto%;
+    width:auto;
     background-color: cadetblue;
     margin:2px;
+}
+.bottom-row{
+    width:auto;
+    background-color: rgb(134, 126, 126);;
+    margin:2px;
+    text-align: center;
+}
+.img{
+    text-align: center;
+}
+.header4{
+text-align: left;
 }
 .col3{
     margin:auto;
@@ -35,7 +47,7 @@
 /*NAVIGATION*/    
 #main-content ul{
     padding: 2px;
-    text-align: center;
+    text-align: left;
 }
 .column{
     background-color: darkgray(100, 35, 157);
@@ -48,7 +60,7 @@
     text-decoration: none;
     padding: 2px;
     margin:0;
-    text-align: left;
+    text-align: center;
 }
 #main-nav ul{
     padding-left: 2px;
@@ -68,9 +80,9 @@
     
     list-style-type: none;
     text-decoration: none;
-    background-color: rgb(27, 61, 111);
     border-bottom: 2px solid cadetblue;
-    text-align: center;
+    text-align: left;
+    padding:0;
 }
 
 /*typography*/
@@ -138,9 +150,6 @@ p{
     #main-nav ul, .flex-container{
         display: flex;
     }
-    #col1 li{
-        display: inline-block;
-    }
     .bottom-row, .col1{
         flex:1;
     }
@@ -148,5 +157,4 @@ p{
         flex:2;
     }
 
-    
 }
