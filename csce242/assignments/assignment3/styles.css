@@ -129,7 +129,7 @@ p{
     text-transform: uppercase;
 }
 /*Larger resolution*/
-@media (min-width: 100px){
+@media (min-width: 900px){
     body {
         background-color: darkgrey;
     }
