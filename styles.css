@@ -2,8 +2,10 @@ body {
     margin:auto;
     font-family: Arial, Helvetica, sans-serif;
    /*background-color:azure;*/
-    background:url(images/backgroundFinal.png) no-repeat center fixed;
+    background-color: dimgray;
     color:whitesmoke;
+    text-align: center;
+    background-color: dimgrey;
 }
 /* Structure */
 #content {
@@ -12,50 +14,41 @@ padding: auto;/*area inside the box margin = outside the element*/
 width: 80%;
 margin: auto;   /*center horizontally*/
 border-radius: 100 px;/*takes off the sharp edges*/
+text-align: center;
 }
+
 /*Typography*/
 
 /*navigation*/
-#main-nav a{
-    /*remove the underline*/
-    text-decoration: none;
-    background:#3a4b4f;
-    padding: 2px;
-    margin:auto;
-    color:whitesmoke;
-
-    border-radius: 2px;
-
-   
-}
-a:hover{
-    text-transform: uppercase;
-}
-#ass-nav a{
-    /*text-decoration: none;
-    background: b0eff7;
-    padding: 2px;
-    margin:auto;
-    color:#033254;
-    */
-    color:whitesmoke;
-    text-decoration: none;
-    background:#3a4b4f;   /* moves text over */
-    padding: auto;/*area inside the box margin = outside the element*/
-    width: 80%;
-    margin: auto;   /*center horizontally*/
-    border-radius: 100 px;/*takes off the sharp edges*/
-}
-ul {
-    color: whitesmoke;
-}
-h2{
+#main-content h2{
     text-decoration: none;
     padding: auto;/*area inside the box margin = outside the element*/
     width: 80%;
     margin: 20px;   /*center horizontally*/
     border-radius: 100 px;/*takes off the sharp edges*/
+    text-align: center;
 }
 h1 {
     color:whitesmoke;
+}
+
+/*Larger resolution*/
+@media (min-width: 900px){
+    body{
+        background:url(images/backgroundFinal.png) no-repeat center fixed;
+        text-align: center;
+        
+    }
+    #main-content{
+        text-align: center;
+    }
+    .col123{
+        text-align: center;
+    }
+   .flex-container, .col123{
+        display: flex;
+    }
+    .col1, .col3, .col123{
+        flex:1;
+    }
 }
