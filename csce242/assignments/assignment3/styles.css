@@ -5,6 +5,12 @@
     color:antiquewhite;
     
 }
+.col1{
+    background-color: cadetblue;
+    margin:20%;
+    padding:2px;
+    text-align: center;
+}
 #main-content{
     background-color: rgb(134, 126, 126);
     text-align: center;
@@ -13,6 +19,7 @@
     background-color: cadetblue;
     margin:auto;
     padding:2px;
+    text-align: center;
 }
 .col2{
     width:98%;
@@ -61,6 +68,7 @@
     text-decoration: none;
     background-color: rgb(27, 61, 111);
     border-bottom: 2px solid cadetblue;
+    text-align: center;
 }
 
 /*typography*/
@@ -121,7 +129,7 @@ p{
     text-transform: uppercase;
 }
 /*Larger resolution*/
-@media (min-width: 900px){
+@media (min-width: 100px){
     body {
         background-color: darkgrey;
     }
