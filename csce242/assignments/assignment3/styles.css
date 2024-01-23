@@ -1,12 +1,12 @@
 /* STRUCTURE*/
 #main-header{
-    background-color:cadetblue;
+    background-color:rgb(74, 101, 101);
     text-align: center;
     color:antiquewhite;
     
 }
 .col1{
-    background-color: cadetblue;
+    background-color: rgb(74, 101, 101);
    
     padding:2px;
     text-align: center;
@@ -19,7 +19,7 @@
     text-align: center;
 }
 .col1{
-    background-color: cadetblue;
+    background-color: rgb(74, 101, 101);
     margin:auto;
     width: auto;
     height:auto;
@@ -28,12 +28,12 @@
 }
 .col2{
     width:auto;
-    background-color: cadetblue;
+    background-color: rgb(74, 101, 101);
     margin:2px;
 }
 .bottom-row{
     width:auto;
-    background-color: rgb(134, 126, 126);;
+    background-color: rgb(134, 126, 126);
     margin:2px;
     text-align: center;
 }
@@ -72,9 +72,10 @@ text-align: left;
 #main-nav li{
     
     list-style-type: none;
+    text-decoration: none;
     padding: 5px;
-    background-color: rgb(27, 61, 111);
-    border-bottom: 2px solid cadetblue;
+    background-color: rgb(25, 65, 63);
+    border-bottom: 2px solid rgb(74, 101, 101);
     margin:auto;
     text-align: center;
     
@@ -83,7 +84,7 @@ text-align: left;
     
     list-style-type: none;
     text-decoration: none;
-    border-bottom: 2px solid cadetblue;
+    border-bottom: 2px solid  rgb(134, 126, 126);
     text-align: left;
     padding:0;
 }
@@ -96,7 +97,7 @@ h1{
     color:antiquewhite;
 }
 h2{
-    color: cadetblue;
+    color:antiquewhite;
 }
 h3{
     color:antiquewhite;
