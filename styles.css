@@ -1,3 +1,32 @@
 body{
-    background-color: crimson;
+    background: rgb(19, 2, 133);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background: rgb(5, 1, 32);
+    width: 75%;
+    margin:auto;
+    padding: 10px;
+    
+}
+h1 {
+
+    color: rgb(186, 197, 249);
+}
+
+p {
+    color:antiquewhite
+}
+h2{
+    color:rgb(186, 197, 249)
+}
+
+ul {
+    background: rgb(186, 197, 249);
+    color: rgb(5, 1, 32);
+}
+a { 
+    color: rgb(5, 1, 32);
+    text-decoration: none;
 }
