@@ -1,0 +1,53 @@
+body{
+    background: url(../../../images/fpbackground.jpg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#content{
+    background:rgba(169, 206, 239, 0.7);
+    margin:auto;
+    width:75%;
+    border-radius: 5px;
+}
+/*navigation*/
+h1{
+    text-align: center;
+}
+#main-nav a{
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    background: rgba(66, 70, 67, 0.7);
+    width: 75%;
+    padding: auto;
+    color: rgb(255, 191, 127);
+    border-radius: 5px;
+}
+
+#main-nav a:hover {
+    background: rgb(225, 182, 175);
+    color: black;
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+
+.imageOne {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+.imageTwo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+table {
+    width:auto;
+}
+
