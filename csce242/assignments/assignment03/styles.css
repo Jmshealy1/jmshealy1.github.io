@@ -3,15 +3,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background: gray;
+    color: white;
 }
-
-header, footer {
+body h2{
+    margin-left: 10%;
+}
+header {
+    text-align: center;
+}
+footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 1;
 }
 
+.main-content {
+    margin: 3px;
+}
 #main-nav ul {
     text-align: center;
     background: #555;
@@ -33,8 +42,21 @@ header, footer {
     padding: 10px;
     display: block;
 }
+#links {
+    width:200px;
+    background-color: #333;
+}
+#links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+#linksh2 {
+    margin-top: 5px;
+    background: #333;
 
-.col1of3, .col2of3, .col3of3, #col1of3, #col2of3, #col3of3 {
+}
+#col1of3, .col2of3, .col3of3, #col1of3, #col2of3, #col3of3 {
     padding: 20px;
     color: white;
     text-align: center;
@@ -42,35 +64,67 @@ header, footer {
 
 .col1of3, #col1of3 {
     background-color: #333;
+    width: 80%;
+    text-align: center;
+    margin: auto;
 }
 
-.col2of3 {
+.col2of3, #col2of3{
     background-color: #666;
+    width: 80%;
+    text-align: center;
+    margin: auto;
 }
 
-.col3of3 {
+.col3of3, #col3of3 {
     background-color: #333;
+    width: 80%;
+    text-align: center;
+    margin:auto
 }
-
+.titlecol1{
+    color:white;
+    background: #555;
+    margin-top: 5px;
+    width:100%;
+    height: 100%;
+    image-rendering: auto;
+    padding-right: 30px;
+}
 section h2, section p {
     text-align: left;
 }
 
-#links {
-    list-style-type: none;
+.titlesection1flex-container {
+    text-align: center;
 }
-
 
 @media(min-width: 900px) {
 
-    #main-nav ul, .flex-container, .col1of3, .col2of3, .col3of3{
+    #main-nav ul, .flex-container, .col1of3, .col2of3, .col3of3, .titlesection1flex-container{
         display: flex;
-        padding-left: 0;
-        margin: 0;
-        width: 100%;
+        padding-left: 3px;
+        margin: auto;
+        width:90%;
         text-align: center;
+        padding-right: 3px;
     }
-
+    section {
+        padding-right: 5px;
+    }
+    #links {
+        height: 90%;
+        width: 180px;
+    }
+    #links li{
+        text-align: center;
+        text-decoration: underline;
+        list-style: none;
+    }
+    .main-content {
+        margin:auto;
+        padding:2px;
+    }
     #main-nav li {
         flex: 1;
         text-align: center;
@@ -79,6 +133,10 @@ section h2, section p {
 
     #main-nav ul {
         flex-direction: row;
+    }
+    
+    .titlesection1flex-container{
+        flex: 4;
     }
 
 }
