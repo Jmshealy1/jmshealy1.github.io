@@ -33,7 +33,10 @@ footer {
 #main-nav li {
     list-style-type: none;
     background-color: #555;
-    border-bottom: 1px solid #9e5050;
+    border-bottom: 2px solid #9e5050;
+    border-right: 2px solid #9e5050;
+    border-left:2px solid #9e5050;
+    border-top: 2px solid #9e5050;
 }
 
 #main-nav a {
@@ -105,7 +108,7 @@ section h2, section p {
         display: flex;
         padding-left: 3px;
         margin: auto;
-        width:90%;
+        width:100%;
         text-align: center;
         padding-right: 3px;
     }
