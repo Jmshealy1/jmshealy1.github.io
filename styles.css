@@ -1,103 +1,97 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #c8c1c0;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #610909;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin: 0;
-  }
-  
-  header h3 {
-    padding-left: 3px;
-    text-align: left;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+header {
+  background: darkred;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.assignments, .projects {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  border-bottom: 2px solid darkred;
+  padding-bottom: 5px;
+  color: darkred;
+  text-align: center;
+}
+
+.assignment, .project {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.assignment:hover, .project:hover {
+  transform: scale(1.02);
+}
+
+a {
+  text-decoration: none;
+  color: darkred;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.assignment img, .project img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+footer {
+  background: darkred;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
   main {
-    padding: 2rem;
-    margin: 0;
+    width: 90%;
+    flex-direction: column;
   }
-  
-  .assignments {
-    margin: 0;
-    padding: 0;
+
+  .content-container {
+    grid-template-columns: 1fr;
   }
-  
-  .assignment {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    text-align: center;
-    overflow: hidden;
-    margin: 2rem auto;
-    padding: 0;
+
+  .assignment img, .project img {
+    max-width: 100%;
   }
-  
-  .assignment img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .details {
-    padding: 1rem;
-    margin: 0;
-  }
-  
-  .details h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .details p {
-    font-size: 0.9rem;
-    color: #555;
-    margin: 0;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #610909;
-    color: white;
-    margin-top: 2rem;
-  }
-  
-  @media (min-width: 600px) {
-    .assignments {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
-  
-    .assignment {
-      margin: 0;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .assignments {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-    }
-  
-    .assignment {
-      max-width: 100%;
-    }
-  }
-  
+}
