@@ -41,7 +41,6 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
     justify-content: center;
 }
 
@@ -99,7 +98,9 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-
+    nav ul {
+        display: flex;
+    }
     .logo-container {
         position: absolute;
         top: 10px;
