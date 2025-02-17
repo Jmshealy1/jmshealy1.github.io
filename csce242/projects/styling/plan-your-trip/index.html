@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TrailHunter - Plan Your Trip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="../../../../images/deer-hunting-logo_215413-101.png" alt="TrailHunter Logo">
+        </div>
+        <h1>TrailHunter</h1>
+
+        <div class="menu-icon" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../homepage/index.html">Home</a></li>
+                <li><a href="../hunting-guides/index.html">Hunting Guides</a></li>
+                <li><a href="../gear-and-review/index.html">Gear & Reviews</a></li>
+                <li><a href="../community-hub/index.html">Community Hub</a></li>
+                <li><a href="../plan-your-trip/index.html">Plan Your Trip</a></li>
+                <li><a href="../contact-us/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="trip-banner">
+        <img src="../../../../images/plantriptop.jpg" alt="Hunting Trip">
+    </section>
+
+    <section class="trip-form-container">
+        <div class="trip-image">
+            <img src="../../../../images/plantripleft.jpg" alt="Planning a Trip">
+        </div>
+        
+        <form class="trip-form">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jonathan Shealy</p>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
