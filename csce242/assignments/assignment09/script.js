@@ -1,38 +1,46 @@
-document.getElementById("exercise1-btn").onclick = () => {
-    showSection("travel");
-};
+let climbIndex = 0;
+let images = ["../../../images/left.png", "../../../images/right.png"];
+let imageIndex = 0;
+let climbingInterval;
 
-document.getElementById("exercise2-btn").onclick = () => {
-    showSection("heart");
-};
-
-function showSection(section) {
-    document.querySelectorAll(".content").forEach(div => div.classList.remove("active"));
-    document.getElementById(section).classList.add("active");
-}
-
-document.getElementById("transport").oninput = () => {
-    let input = document.getElementById("transport").value.toLowerCase();
-    let img = document.getElementById("transport-img");
-    let images = {
-        "bike": "../../../images/bike.jpg",
-        "scooter": "../../../images/scooter.jpg",
-        "car": "../../../images/car.png",
-        "skateboard": "../../../images/skateboard.jpg"
-    };
+document.getElementById("draw-btn").addEventListener("click", () => {
+    let container = document.getElementById("ladder-container");
+    container.innerHTML = '<div class="side-rail left-rail"></div><div class="side-rail right-rail"></div>';
+    container.classList.add("ladder-visible");
     
-    if (images[input]) {
-        img.src = images[input];
-        img.style.display = 'block';
-    } else {
-        img.style.display = 'none';
+    for (let i = 0; i < 10; i++) {
+        let rung = document.createElement("hr");
+        rung.className = "rung";
+        container.appendChild(rung);
     }
-};
+    
+    let stickFigure = document.getElementById("stick-figure");
+    stickFigure.classList.add("stick-visible");
+    stickFigure.style.backgroundImage = `url(${images[0]})`;
+    
+    document.getElementById("climb-btn").style.display = "inline";
+});
 
-document.getElementById("red-btn").onclick = () => changeHeartColor("red");
-document.getElementById("blue-btn").onclick = () => changeHeartColor("blue");
-document.getElementById("green-btn").onclick = () => changeHeartColor("green");
-
-function changeHeartColor(color) {
-    document.getElementById("heart-symbol").style.color = color;
-}
+document.getElementById("climb-btn").addEventListener("click", () => {
+    let stickFigure = document.getElementById("stick-figure");
+    let rungs = document.querySelectorAll(".rung");
+    let container = document.getElementById("ladder-container");
+    climbIndex = 0;
+    clearInterval(climbingInterval);
+    stickFigure.style.bottom = "5px";
+    
+    climbingInterval = setInterval(() => {
+        if (climbIndex >= rungs.length) {
+            clearInterval(climbingInterval);
+            setTimeout(() => {
+                stickFigure.style.bottom = "5px";
+            }, 500);
+            return;
+        }
+        
+        stickFigure.style.bottom = `${climbIndex * (container.clientHeight / rungs.length)}px`;
+        stickFigure.style.backgroundImage = `url(${images[imageIndex]})`;
+        imageIndex = 1 - imageIndex;
+        climbIndex++;
+    }, 500);
+});
