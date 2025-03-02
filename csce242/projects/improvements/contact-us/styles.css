@@ -33,6 +33,14 @@ header h1 {
     padding-top: 10px;
 }
 
+.trip-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
 nav {
     margin-top: 10px;
 }

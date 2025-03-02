@@ -3,6 +3,7 @@
 <head>
     <title>TrailHunter - Plan Your Trip</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="../script.js" defer></script>
 </head>
 <body>
 
@@ -12,9 +13,7 @@
         </div>
         <h1>TrailHunter</h1>
 
-        <div class="menu-icon" id="menu-toggle">
-            ☰
-        </div>
+        <div class="menu-icon" id="menu-toggle">☰</div>
 
         <nav>
             <ul>
@@ -32,12 +31,34 @@
         <img src="../../../../images/plantriptop.jpg" alt="Hunting Trip">
     </section>
 
+    <section class="trip-packages">
+        <h2>Choose Your Hunting Package</h2>
+        <div class="packages-container">
+            <div class="package">
+                <h3>Basic Hunting Experience</h3>
+                <p>Includes guided hunting in a designated area.</p>
+                <p><strong>Price:</strong> $500 per person (gear not included, please visit the gear-and-review page to reserve gear)</p>
+            </div>
+            <div class="package">
+                <h3>Deluxe Hunting Adventure</h3>
+                <p>Includes guided hunting and an overnight stay in a hunting cabin.</p>
+                <p><strong>Price:</strong> $1,200 per person (gear not included, please visit the gear-and-review page to reserve gear)</p>
+            </div>
+            <div class="package">
+                <h3>Ultimate Trophy Hunt</h3>
+                <p>Full guided experience with expert tracking support.</p>
+                <p><strong>Price:</strong> $2,500 per person (gear not included, please visit the gear-and-review page to reserve gear)</p>
+            </div>
+        </div>
+    </section>
+
     <section class="trip-form-container">
         <div class="trip-image">
             <img src="../../../../images/plantripleft.jpg" alt="Planning a Trip">
         </div>
         
         <form class="trip-form">
+            <h2>Reserve Your Trip</h2>
             <div class="form-group">
                 <label for="first-name">First Name:</label>
                 <input type="text" id="first-name" name="first-name" required>
@@ -59,6 +80,15 @@
             </div>
 
             <div class="form-group">
+                <label for="package">Select Package:</label>
+                <select id="package" name="package" required>
+                    <option value="basic">Basic Hunting Experience - $500</option>
+                    <option value="deluxe">Deluxe Hunting Adventure - $1,200</option>
+                    <option value="ultimate">Ultimate Trophy Hunt - $2,500</option>
+                </select>
+            </div>
+
+            <div class="form-group">
                 <label for="start-date">Start Date:</label>
                 <input type="date" id="start-date" name="start-date" required>
             </div>
@@ -68,15 +98,15 @@
                 <input type="date" id="end-date" name="end-date" required>
             </div>
 
-            <button type="submit" class="submit-btn">Submit</button>
+            <h3>Rental Gear Total: $<span id="gear-total">0.00</span></h3>
+            <h3>Trip Total: $<span id="trip-total">0.00</span></h3>
+
+            <button type="submit" class="submit-btn">Reserve Now</button>
         </form>
     </section>
 
     <footer>
         <p>&copy; 2025 Jonathan Shealy</p>
     </footer>
-
-    <script src="../script.js"></script>
-
 </body>
 </html>

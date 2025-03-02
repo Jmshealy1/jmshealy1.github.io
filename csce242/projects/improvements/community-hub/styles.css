@@ -21,6 +21,14 @@ header {
     left: 20px;
 }
 
+.trip-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
 .logo-container img {
     width: 50%;
     height: auto;

@@ -2,20 +2,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("menu-toggle");
     const navMenu = document.querySelector("nav");
 
-    menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-    });
+    if (menuToggle) {
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
 
-    document.addEventListener("click", (event) => {
-        if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
-            navMenu.classList.remove("active");
-        }
-    });
+        document.addEventListener("click", (event) => {
+            if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
+                navMenu.classList.remove("active");
+            }
+        });
+    }
 
     let cart = [];
 
     window.addToCart = (name, pricePerDay, inputId) => {
-        let days = parseInt(document.getElementById(inputId).value);
+        let inputElement = document.getElementById(inputId);
+        if (!inputElement) return;
+        
+        let days = parseInt(inputElement.value);
         if (days < 1) days = 1; 
         let totalCost = pricePerDay * days;
 
@@ -34,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const cartItemsDiv = document.getElementById("cart-items");
         const cartTotalSpan = document.getElementById("cart-total");
 
+        if (!cartItemsDiv || !cartTotalSpan) return;
+
         cartItemsDiv.innerHTML = "";
         let total = 0;
 
@@ -45,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         cartTotalSpan.textContent = total.toFixed(2);
+        localStorage.setItem("gearTotal", total.toFixed(2));
     };
 
     window.removeFromCart = (index) => {
@@ -57,11 +65,24 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Your cart is empty!");
             return;
         }
-        alert(`Thank you for reserving your gear. 
-        Items will be available to pick up on arrival. 
-        Please have your ID, and will be added to your trip total.`);
+        alert(`Thank you for reserving your gear. \nItems will be available to pick up on arrival. \nPlease have your ID, and will be added to your trip total.`);
 
         cart = [];
         updateCart();
     };
+
+    let gearTotalElement = document.getElementById("gear-total");
+    let packageElement = document.getElementById("package");
+    let tripTotalElement = document.getElementById("trip-total");
+    
+    if (gearTotalElement && packageElement && tripTotalElement) {
+        let gearTotal = localStorage.getItem("gearTotal") || 0;
+        gearTotalElement.textContent = parseFloat(gearTotal).toFixed(2);
+        
+        packageElement.addEventListener("change", function() {
+            let packagePrice = parseFloat(this.value === "basic" ? 500 : this.value === "deluxe" ? 1200 : 2500);
+            let totalTripCost = packagePrice + parseFloat(gearTotal);
+            tripTotalElement.textContent = totalTripCost.toFixed(2);
+        });
+    }
 });
