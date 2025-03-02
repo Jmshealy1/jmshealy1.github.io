@@ -62,79 +62,53 @@ nav ul li a {
     top: 20px;
 }
 
-.trip-banner img {
+.hero {
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.img {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.img img {
+    max-width: 100%;
     height: auto;
     display: block;
-    text-align: center;
-    margin: auto;
 }
 
-.trip-form-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 50px 10%;
-    background: white;
-    margin: auto;
-    text-align: center;
-}
-
-.trip-image {
-    width: 40%;
-    margin-right: 30px;
-    text-align: center;
-}
-
-.trip-image img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.trip-form {
-    width: 50%;
-    background: #f8f8f8;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    width: 30%;
+.img-description {
     font-size: 16px;
-    font-weight: bold;
     color: #333;
-}
-
-.form-group input {
-    width: 65%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 12px;
-    font-size: 18px;
-    color: white;
-    background: #2c3e50;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.submit-btn:hover {
-    background: #1a252f;
+    margin-top: 10px;
+    max-width: 80%;
+    line-height: 1.5;
 }
 
 footer {
@@ -184,24 +158,21 @@ footer {
         flex-direction: column;
     }
 
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav ul li a:hover {
+        background-color: #e67e22;
+    }
+
     nav.active {
         display: flex;
-    }
-
-    .trip-form-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .trip-image {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .trip-form {
-        width: 90%;
     }
 }

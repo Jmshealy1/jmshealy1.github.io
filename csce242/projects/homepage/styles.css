@@ -54,6 +54,14 @@ nav ul li a {
     font-size: 18px;
 }
 
+.trip-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
 .hero {
 
     color: black;

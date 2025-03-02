@@ -5,6 +5,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header */
 header {
     background-color: #2c3e50;
     color: white;
@@ -13,6 +14,7 @@ header {
     position: relative;
 }
 
+/* Logo */
 .logo-container {
     position: absolute;
     top: 10px;
@@ -21,7 +23,7 @@ header {
 
 .logo-container img {
     width: 50%;
-    height: 50%;
+    height: auto;
 }
 
 header h1 {
@@ -30,6 +32,7 @@ header h1 {
     padding-top: 10px;
 }
 
+/* Navigation */
 nav {
     margin-top: 10px;
 }
@@ -52,6 +55,7 @@ nav ul li a {
     font-size: 18px;
 }
 
+/* Hamburger Menu */
 .menu-icon {
     display: none;
     font-size: 30px;
@@ -62,81 +66,61 @@ nav ul li a {
     top: 20px;
 }
 
-.trip-banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    text-align: center;
-    margin: auto;
-}
-
-.trip-form-container {
+/* Community Hub */
+.community-hub {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     padding: 50px 10%;
     background: white;
-    margin: auto;
-    text-align: center;
 }
 
-.trip-image {
-    width: 40%;
-    margin-right: 30px;
-    text-align: center;
-}
-
-.trip-image img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.trip-form {
-    width: 50%;
-    background: #f8f8f8;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
+/* Community Column */
+.community-column {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    width: 30%;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-}
-
-.form-group input {
-    width: 65%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.submit-btn {
+    justify-content: space-between;
     width: 100%;
-    padding: 12px;
-    font-size: 18px;
-    color: white;
-    background: #2c3e50;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    margin-bottom: 30px;
 }
 
-.submit-btn:hover {
-    background: #1a252f;
+/* Image Stack */
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
 }
 
+.image-stack img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Text Content */
+.text-content {
+    width: 55%;
+    text-align: left;
+    padding: 20px;
+}
+
+.text-content h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
     background: #2c3e50;
     color: white;
@@ -145,6 +129,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Mobile View */
 @media only screen and (max-width: 768px) {
     header {
         display: flex;
@@ -184,24 +169,42 @@ footer {
         flex-direction: column;
     }
 
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav ul li a:hover {
+        background-color: #e67e22;
+    }
+
     nav.active {
         display: flex;
     }
 
-    .trip-form-container {
+    /* Stack Columns for Mobile */
+    .community-column {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 100%;
         text-align: center;
     }
 
-    .trip-image {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
+    .text-content {
+        width: 90%;
+        text-align: center;
     }
 
-    .trip-form {
+    .image-stack {
         width: 90%;
+    }
+
+    .image-stack img {
+        max-width: 100%;
+        height: auto;
     }
 }
