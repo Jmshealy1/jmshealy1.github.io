@@ -5,7 +5,7 @@
       "type": "rifle",
       "pricePerDay": 55,
       "material": "Steel & Wood",
-      "img": "https://raw.githubusercontent.com/Jmshealy1/jmshealy1.github.io/main/csce242/projects/part6/images/rifle.jpg",
+      "img": "../../../../images/remington700.jpg",
       "description": "Bolt-action hunting rifle with exceptional accuracy.",
       "rating": 4.8
     },

@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const menuToggle = document.getElementById("menu-toggle");
     const navMenu = document.querySelector("nav");
-
-    // ✅ Fix for Toggle Menu
+    
     if (menuToggle) {
         menuToggle.addEventListener("click", () => {
             navMenu.classList.toggle("active");
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     }
 
-    // ✅ Load JSON & Display Gear
     const jsonUrl = "https://raw.githubusercontent.com/Jmshealy1/jmshealy1.github.io/main/csce242/projects/part6/json/json-equipment.json"; 
 
     try {
@@ -23,19 +21,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (!response.ok) throw new Error("Failed to fetch JSON file");
         const gearData = await response.json();
 
-        console.log("✅ JSON Loaded Successfully:", gearData);
+        console.log("JSON Loaded Successfully:", gearData);
         displayGear(gearData);
     } catch (error) {
-        console.error("❌ Error loading JSON:", error);
+        console.error("Error loading JSON:", error);
     }
 });
 
-// ✅ Function to Display Gear Dynamically
 function displayGear(gearData) {
     const gearList = document.getElementById("gear-list");
 
     gearData.forEach(item => {
-        // ✅ Create Gear Item
         const gearItem = document.createElement("div");
         gearItem.className = "gear-item";
 
@@ -56,8 +52,6 @@ function displayGear(gearData) {
 
         gearList.appendChild(gearItem);
     });
-
-    // ✅ Attach Event Listeners for Add to Cart
     document.querySelectorAll(".add-to-cart-btn").forEach(button => {
         button.addEventListener("click", (event) => {
             const id = event.target.dataset.id;
@@ -68,7 +62,6 @@ function displayGear(gearData) {
     });
 }
 
-// ✅ Cart Functionality
 let cart = [];
 
 window.addToCart = (name, pricePerDay, inputId) => {
