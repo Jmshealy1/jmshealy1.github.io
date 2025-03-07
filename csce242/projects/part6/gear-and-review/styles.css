@@ -18,6 +18,12 @@ header {
     top: 10px;
     left: 20px;
 }
+.gear-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 10px; 
+}
 
 .logo-container img {
     width: 50%;
@@ -86,12 +92,7 @@ nav ul li a {
     width: 100%;
 }
 
-.gear-item img {
-    width: 387px;
-    height: auto;
-    border-radius: 10px;
-    margin-right: 20px;
-}
+
 
 .gear-info {
     flex: 1;
