@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TrailHunter - Gear & Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="../../../../images/deer-hunting-logo_215413-101.png" alt="TrailHunter Logo">
+        </div>
+        <h1>TrailHunter</h1>
+
+        <div class="menu-icon" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../homepage/index.html">Home</a></li>
+                <li><a href="../hunting-guides/index.html">Hunting Guides</a></li>
+                <li><a href="../gear-and-review/index.html">Gear & Reviews</a></li>
+                <li><a href="../community-hub/index.html">Community Hub</a></li>
+                <li><a href="../plan-your-trip/index.html">Plan Your Trip</a></li>
+                <li><a href="../contact-us/index.html">Contact</a></li>
+                <li><a href="../rental/index.html">Rental</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="trip-banner">
+        <img src="../../../../images/plantriptop.jpg" alt="Hunting Trip">
+    </section>
+    
+    <section class="gear-reviews">
+        <h2>Hunting Gear & Reviews</h2>
+
+        <div class="gear-item">
+            <img src="../../../../images/rifle.jpg" alt="Hunting Rifle">
+            <div class="gear-info">
+                <h3>Best Hunting Rifles</h3>
+                <p>Choosing the right hunting rifle depends on the game you’re pursuing and the terrain you'll be hunting in.</p>
+                <p class="price">$50 per day</p>
+                <label>Days: <input type="number" id="days-rifle" min="1" value="1"></label>
+                <button onclick="addToCart('Hunting Rifle', 50, 'days-rifle')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="gear-item">
+            <img src="../../../../images/scope.jpg" alt="Rifle Scope">
+            <div class="gear-info">
+                <h3>Top Rifle Scopes</h3>
+                <p>A high-quality rifle scope enhances accuracy, increases range, and improves target acquisition.</p>
+                <p class="price">$15 per day</p>
+                <label>Days: <input type="number" id="days-scope" min="1" value="1"></label>
+                <button onclick="addToCart('Rifle Scope', 15, 'days-scope')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="gear-item">
+            <img src="../../../../images/hunting_boots_by-Red_Head.jpg" alt="Hunting Boots">
+            <div class="gear-info">
+                <h3>Durable Hunting Boots</h3>
+                <p>Waterproof and insulated boots for any terrain.</p>
+                <p class="price">$10 per day</p>
+                <label>Days: <input type="number" id="days-boots" min="1" value="1"></label>
+                <button onclick="addToCart('Hunting Boots', 10, 'days-boots')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="gear-item">
+            <img src="../../../../images/backpacks.jpg" alt="Hunting Backpack">
+            <div class="gear-info">
+                <h3>Essential Hunting Backpacks</h3>
+                <p>Spacious and rugged for long trips.</p>
+                <p class="price">$8 per day</p>
+                <label>Days: <input type="number" id="days-backpack" min="1" value="1"></label>
+                <button onclick="addToCart('Hunting Backpack', 8, 'days-backpack')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>Your Rental Cart</h2>
+        <div id="cart-items"></div>
+        <p><strong>Total Cost:</strong> $<span id="cart-total">0.00</span></p>
+        <button onclick="checkout()">Proceed to Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TrailHunter</p>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
