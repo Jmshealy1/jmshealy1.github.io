@@ -15,7 +15,7 @@
       "type": "shotgun",
       "pricePerDay": 45,
       "material": "Steel & Synthetic",
-      "img": "https://raw.githubusercontent.com/Jmshealy1/jmshealy1.github.io/main/csce242/projects/part6/images/shotgun.jpg",
+      "img": "../../../../images/benelli.jpg",
       "description": "Semi-automatic shotgun ideal for waterfowl.",
       "rating": 4.9
     },
@@ -25,7 +25,7 @@
       "type": "black-powder",
       "pricePerDay": 40,
       "material": "Wood & Iron",
-      "img": "https://raw.githubusercontent.com/Jmshealy1/jmshealy1.github.io/main/csce242/projects/part6/images/blackpowder.jpg",
+      "img": "../../../../images/cva.jpg",
       "description": "Classic muzzleloader rifle, accurate and reliable.",
       "rating": 4.5
     },
@@ -35,7 +35,7 @@
       "type": "scope",
       "pricePerDay": 20,
       "material": "Aluminum & Glass",
-      "img": "https://raw.githubusercontent.com/Jmshealy1/jmshealy1.github.io/main/csce242/projects/part6/images/scope.jpg",
+      "img": "../../../../images/leupold.jpg",
       "description": "High-quality rifle scope with crystal-clear optics.",
       "rating": 4.8
     },
@@ -45,7 +45,7 @@
       "type": "scope",
       "pricePerDay": 18,
       "material": "Aluminum & Multi-coated Glass",
-      "img": "https://raw.githubusercontent.com/Jmshealy1/jmshealy1.github.io/main/csce242/projects/part6/images/scope2.jpg",
+      "img": "../../../../images/vortex.jpg",
       "description": "Budget-friendly scope with excellent optics.",
       "rating": 4.7
     },
@@ -55,7 +55,7 @@
       "type": "boots",
       "pricePerDay": 10,
       "material": "Leather & Gore-Tex",
-      "img": "https://raw.githubusercontent.com/Jmshealy1/jmshealy1.github.io/main/csce242/projects/part6/images/boots.jpg",
+      "img": "../../../../images/irishsetter.jpg",
       "description": "Waterproof boots suitable for rugged terrain.",
       "rating": 4.9
     },
@@ -65,7 +65,7 @@
       "type": "backpack",
       "pricePerDay": 8,
       "material": "Ripstop Nylon",
-      "img": "https://raw.githubusercontent.com/Jmshealy1/jmshealy1.github.io/main/csce242/projects/part6/images/backpacks.jpg",
+      "img": "../../../../images/eberlestock.jpg",
       "description": "Durable backpack for long hunting trips.",
       "rating": 4.8
     },
@@ -75,7 +75,7 @@
       "type": "backpack",
       "pricePerDay": 12,
       "material": "Cordura Nylon",
-      "img": "https://raw.githubusercontent.com/Jmshealy1/jmshealy1.github.io/main/csce242/projects/part6/images/badlands.jpg",
+      "img": "../../../../images/badlands.jpg",
       "description": "Heavy-duty hunting backpack with ample storage.",
       "rating": 4.8
     }
