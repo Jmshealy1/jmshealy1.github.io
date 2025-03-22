@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const menuToggle = document.getElementById("menu-toggle");
     const navMenu = document.querySelector("nav");
-    
+
     if (menuToggle) {
         menuToggle.addEventListener("click", () => {
             navMenu.classList.toggle("active");
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     }
 
-    const jsonUrl = "https://raw.githubusercontent.com/Jmshealy1/jmshealy1.github.io/main/csce242/projects/part6/json/json-equipment.json"; 
+    const jsonUrl = "https://raw.githubusercontent.com/Jmshealy1/jmshealy1.github.io/main/csce242/projects/part6/json/json-equipment.json";
 
     try {
         const response = await fetch(jsonUrl);
@@ -30,6 +30,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function displayGear(gearData) {
     const gearList = document.getElementById("gear-list");
+    if (!gearList) {
+        console.warn("gear-list element not found on this page. Skipping displayGear().");
+        return;
+    }
 
     gearData.forEach(item => {
         const gearItem = document.createElement("div");
@@ -52,6 +56,7 @@ function displayGear(gearData) {
 
         gearList.appendChild(gearItem);
     });
+
     document.querySelectorAll(".add-to-cart-btn").forEach(button => {
         button.addEventListener("click", (event) => {
             const id = event.target.dataset.id;

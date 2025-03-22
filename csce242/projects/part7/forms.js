@@ -1,34 +1,25 @@
-document.getElementById("contact-form").addEventListener("submit", async (event) => {
-    event.preventDefault();
+document.getElementById("contact-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-    const form = event.target;
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-    const messageDiv = document.getElementById("form-message");
-
-    if (!name || !email || !message) {
-        messageDiv.textContent = "All fields are required.";
-        messageDiv.className = "form-feedback error";
-        return;
-    }
+    const form = e.target;
+    const formData = new FormData(form);
+    const messageBox = document.getElementById("form-message");
 
     try {
-        const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+        const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name, email, message })
+            body: formData
         });
 
         if (response.ok) {
-            messageDiv.textContent = "Message sent successfully!";
-            messageDiv.className = "form-feedback success";
+            messageBox.textContent = "Message sent successfully!";
+            messageBox.className = "form-feedback success";
             form.reset();
         } else {
-            throw new Error("Network error");
+            throw new Error("Form submission failed.");
         }
     } catch (error) {
-        messageDiv.textContent = "Something went wrong. Please try again later.";
-        messageDiv.className = "form-feedback error";
+        messageBox.textContent = "An error occurred. Please try again.";
+        messageBox.className = "form-feedback error";
     }
 });

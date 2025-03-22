@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>TrailHunter - Contact Us</title>
@@ -67,6 +67,8 @@
 
             <h3>Send Us a Message</h3>
             <form id="contact-form">
+                <input type="hidden" name="access_key" value="d3d47df3-cd6b-4b15-ba8a-9677881cf1d0">
+
                 <label for="name">Name: *</label>
                 <input type="text" id="name" name="name" required>
 
@@ -74,7 +76,7 @@
                 <input type="email" id="email" name="email" required>
 
                 <label for="message">Message: *</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
                 <button type="submit">Send Message</button>
                 <div id="form-message" class="form-feedback"></div>
@@ -82,12 +84,10 @@
 
             <div class="iframe-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=..."
-                    width="100%"
-                    height="300"
-                    style="border:0;"
+                    src="https://www.google.com/maps/embed?pb=!1m18..."
                     allowfullscreen
-                    loading="lazy">
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
 
@@ -100,6 +100,5 @@
 
     <script src="../script.js"></script>
     <script src="../forms.js"></script>
-    <script src="../contactme.js"></script>
 </body>
 </html>
